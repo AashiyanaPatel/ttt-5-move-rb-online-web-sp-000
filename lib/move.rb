@@ -9,3 +9,5 @@ end
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 board = ["", "", "X", "", "", "", "","", ""]
+
+display_board(board)
