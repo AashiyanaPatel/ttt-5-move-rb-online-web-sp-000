@@ -6,8 +6,13 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-puts "Welcome to Tic Tac Toe!"
-puts "Where would you like to go?"
-board = ["", "", "X", "", "", "", "","", ""]
+def input_to_index(user_input)
+  new_user_input = user_input.to_i
+  new_user_input -= 1
+  return new_user_input
+end
 
-display_board(board)
+def move(board, index, character = "X")
+  board[index] = character
+  return board
+end
